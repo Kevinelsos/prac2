@@ -6,7 +6,7 @@ void imprimir(int *apuntador, int tam);
 
 void problema12()
 {
-    int tam = 0;
+     int tam = 0;
 
     cout << "Ingrse el tamano de la matriz cuadrada: ";
 
@@ -23,8 +23,8 @@ void problema12()
 
     int *ap = new int[tam * tam];
     unsigned int index = 0;
-    for (unsigned int i = 1; i <= tam; i++) {
-        for (unsigned int j = 1; j <= tam; j++) {
+    for ( int i = 1; i <= tam; i++) {
+        for ( int j = 1; j <= tam; j++) {
             cout << "Ingrse el elemento en la fila: " << i << " columna: " << j << "\n";
             cin >> *(ap + index);
             index++;
@@ -44,7 +44,8 @@ void problema12()
                     imprimir(ap, tam);
                     cout << "Cuadrado no magico." << "\n";
                     return;
-                } else valor_resultado = 0;
+                } else
+                    valor_resultado = 0;
             }
         }
     }
@@ -88,7 +89,8 @@ void problema12()
         imprimir(ap, tam);
         cout << "Cuadrado no magico." << "\n";
         return;
-    } else valor_resultado = 0;
+    } else
+        valor_resultado = 0;
 
     cout << "Cuadro magico." << "\n";
     imprimir(ap, tam);

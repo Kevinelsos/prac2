@@ -1,7 +1,6 @@
 #include <iostream>
-#include <limits>
 using namespace std;
-int problema6()
+void problema6()
 {
     int tam = 100;
 
@@ -27,6 +26,4 @@ int problema6()
     // Liberar memoria
     delete[] aptextomi;
     delete[] aptextoma;
-
-
 }

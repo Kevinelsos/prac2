@@ -1,8 +1,7 @@
 #include <iostream>
-#include <limits>
 using namespace std;
 
-int problema8()
+void problema8()
 {
     int tam = 100;
 
