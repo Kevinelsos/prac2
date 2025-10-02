@@ -4,12 +4,11 @@ using namespace std;
 
 void imprimir(int *apuntador, int tam);
 
-int problema12()
+void problema12()
 {
     int tam = 0;
 
-    cout << "Ingrse el taman"
-            "o de la matriz cuadrada: ";
+    cout << "Ingrse el tamano de la matriz cuadrada: ";
 
     while (true) {
         cin >> tam;
@@ -44,8 +43,8 @@ int problema12()
                 if (valor_esperado != valor_resultado) {
                     imprimir(ap, tam);
                     cout << "Cuadrado no magico." << "\n";
-                } else
-                    valor_resultado = 0;
+                    return;
+                } else valor_resultado = 0;
             }
         }
     }
@@ -57,6 +56,7 @@ int problema12()
         if (valor_esperado != valor_resultado) {
             imprimir(ap, tam);
             cout << "Cuadrado no magico." << "\n";
+            return;
         } else
             valor_resultado = 0;
     }
@@ -71,6 +71,7 @@ int problema12()
     if (valor_esperado != valor_resultado) {
         imprimir(ap, tam);
         cout << "Cuadrado no magico." << "\n";
+        return;
     } else
         valor_resultado = 0;
 
@@ -86,12 +87,12 @@ int problema12()
     if (valor_esperado != valor_resultado) {
         imprimir(ap, tam);
         cout << "Cuadrado no magico." << "\n";
-    } else
-        valor_resultado = 0;
+        return;
+    } else valor_resultado = 0;
 
     cout << "Cuadro magico." << "\n";
     imprimir(ap, tam);
-    cout << "Valor de columnas, filas y digonales: " << valor_esperado;
+    cout << "Valor de columnas, filas y digonales: " << valor_esperado << endl;
 }
 
 void imprimir(int *apuntador, int tam)

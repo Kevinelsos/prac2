@@ -3,7 +3,7 @@
 #include "problemas.h"
 using namespace std;
 int main(){
-
+    while(true){
     int opcion;
     cout << "ingrese el numeral del problema (solo pares): "<<endl;
     cin>>opcion;
@@ -35,6 +35,7 @@ int main(){
         break;
     default:
         break;*/
+        }
     }
     return 0;
 }
