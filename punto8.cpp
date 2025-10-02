@@ -2,12 +2,13 @@
 #include <limits>
 using namespace std;
 
-int main() {
+int problema8()
+{
     int tam = 100;
 
     char *original = new char[tam + 1];
     char *letras = new char[tam + 1];
-    char *numeros = new char[tam +1];
+    char *numeros = new char[tam + 1];
 
     cout << "Ingrese una cadena: ";
     cin.getline(original, tam + 1);
@@ -22,8 +23,8 @@ int main() {
             k++;
         }
     }
-    *(letras + k) = '\0'; 
-    *(numeros + j) = '\0'; 
+    *(letras + k) = '\0';
+    *(numeros + j) = '\0';
 
     cout << "Original: " << original << "\n";
     cout << "Texto: " << letras;
@@ -33,6 +34,4 @@ int main() {
     delete[] original;
     delete[] letras;
     delete[] numeros;
-
-    return 0;
 }

@@ -1,8 +1,8 @@
 #include <iostream>
 #include <limits>
 using namespace std;
-
-int main() {
+int problema6()
+{
     int tam = 100;
 
     char *aptextomi = new char[tam + 1];
@@ -19,7 +19,7 @@ int main() {
             *(aptextoma + i) = *(aptextomi + i);
         }
     }
-    *(aptextoma + i) = '\0'; 
+    *(aptextoma + i) = '\0';
 
     cout << "En mayuscula: " << aptextoma << '\n';
     cout << "Original: " << aptextomi << '\n';
@@ -28,5 +28,5 @@ int main() {
     delete[] aptextomi;
     delete[] aptextoma;
 
-    return 0;
+
 }
